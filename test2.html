@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="page-title">Welcome to Gopika Anesh Management System (GAMS)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/photos/IMG20230411175726.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Added */
+        }
+
+        #heading {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+            background-color: rgba(255, 255, 255, 0.5); /* Added */
+            padding: 10px 20px; /* Added */
+        }
+
+        #message {
+            margin-top: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        #fingerprint-button {
+            background-color: transparent;
+            border: none;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        #fingerprint-button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .button {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: #333;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.title = 'Welcome to Gopika Anesh Management System (GAMS)';
+        });
+    </script>
+</head>
+<body>
+    <div id="heading">Welcome to Gopika Anesh Management System (GAMS)</div>
+    <div id="message">Confirm your identity?</div>
+    <button id="fingerprint-button" onclick="redirectToBirthday()"><img src="https://www.innovatrics.com/wp-content/uploads/2020/09/FingerPrint0.svg" alt="Fingerprint"></button>
+
+    <script>
+        function redirectToBirthday() {
+            window.location.href = 'birthday.html';
+        }
+    </script>
+</body>
+</html>
